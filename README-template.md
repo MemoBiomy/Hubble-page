@@ -21,10 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://your-solution-url.com)
+- Solution URL: [Github repo](https://github.com/MemoBiomy/Hubble-page)
 - Live Site URL: [live site](https://your-live-site-url.com)
-
-## My process
 
 ### Built with
 

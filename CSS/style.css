@@ -15,8 +15,19 @@ body {
     background-size: cover;
     background-color: var(--violet);
     height: 100vh;
-    padding: 40px 60px;
+    padding: 40px 60px 20px;
     position: relative;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: auto;
+        background-image: url(../images/bg-mobile.svg);
+        padding: 40px;
+    }
+    header img {
+        max-width: 150px;
+    }
 }
 
 section {
@@ -62,6 +73,33 @@ section button {
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .6)
 }
 
+@media (max-width: 375px) {
+    section {
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 50px;
+    }
+    section > div:last-child {
+        height: auto;
+        text-align: center;
+    }
+    section button {
+        font-size: 16px;
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+    }
+    section .iamge img {
+        max-width: 100%;
+    }
+    section h1 {
+        font-size: 26px;
+    }
+    section p {
+        font-size: 15px;
+    }
+}
+
 .icons {
     position: absolute;
     bottom: 40px;
@@ -83,4 +121,21 @@ section button {
     border: 1px solid white;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .icons {
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+        margin: 60px auto 0;
+        justify-content: space-around;
+        max-width: 165px;
+    }
+    .icons i {
+        margin: 0;
+        font-size: 17px;
+        width: 27px;
+        padding: 20px;
+    }
 }
